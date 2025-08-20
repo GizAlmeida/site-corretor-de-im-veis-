@@ -5,7 +5,7 @@ Projeto de site responsivo desenvolvido com **HTML, CSS e JavaScript**, com foco
 ---
 
 ## 🌐 Demo
-Veja o site online: [Clique aqui](https://seu-usuario.github.io/site-corretor-de-imoveis/)
+Veja o site online: [Clique aqui](https://gizalmeida.github.io/site-corretor-de-im-veis-/)
 
 ---
 
