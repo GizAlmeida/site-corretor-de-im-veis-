@@ -1,2 +1,20 @@
-# site-corretor-de-im-veis-
-Este projeto é um site responsivo criado com HTML, CSS e JavaScript, onde apliquei conceitos de layout moderno, animações e design interativo. O objetivo é demonstrar habilidades em desenvolvimento front-end e a construção de páginas bem estruturadas, responsivas e acessíveis.
+# Site Corretor de Imóveis 🏠
+
+Projeto de site responsivo desenvolvido com **HTML, CSS e JavaScript**, com foco em layout moderno, animações e interatividade. Um projeto para demonstrar habilidades de front-end e boas práticas no desenvolvimento web.
+
+---
+
+## 🌐 Demo
+Veja o site online: [Clique aqui](https://seu-usuario.github.io/site-corretor-de-imoveis/)
+
+---
+
+## 🛠 Tecnologias
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+
+
