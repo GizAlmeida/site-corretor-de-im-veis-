@@ -17,6 +17,14 @@ body {
   margin: auto;
 }
 
+.contato a {
+  color: inherit;
+}
+
+.container a:visited {
+  color: inherit;
+}
+
 header {
   background: #7a3e2b;
   color: #fdf6f0;
@@ -70,20 +78,19 @@ header nav a:hover {
 }
 
 .hero-text {
-    position: relative;
+  position: relative;
   background: rgba(141, 94, 76, 0.85);
   padding: 20px;
   border-radius: 10px;
   margin-top: -250px;
-animation: zoomText  4s ease-in-out infinite ;
-transition: all 1s ease-in-out;
-box-shadow: 0 0 15px #eae0ac;
-
+  animation: zoomText 4s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 15px #eae0ac;
 }
 
 .hero-text:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #eae0ac; 
+  box-shadow: 0 0 25px #eae0ac;
 }
 
 .hero h2 {
@@ -93,24 +100,23 @@ box-shadow: 0 0 15px #eae0ac;
 }
 
 @keyframes zoomText {
-
-     
-      
-       30%, 150%  {transform: scale(0);}
-       50% {transform: scale(1.1);}
-    
-
+  30%,
+  150% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 section {
-  padding: 20px ;
+  padding: 20px;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #7a3e2b;
- 
 }
 
 .grid {
@@ -138,8 +144,6 @@ h2 {
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 8px 30px rgba(209, 168, 65, 0.7);
- 
- 
 }
 
 .card img {
@@ -176,18 +180,15 @@ footer {
 }
 
 @media (max-width: 750px) {
-
-
-header {
-  background: #7a3e2b;
-  color: #fdf6f0;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  font-size: 0.7rem;
-}
-
+  header {
+    background: #7a3e2b;
+    color: #fdf6f0;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 0.7rem;
+  }
 
   header .container {
     display: flex;
@@ -196,35 +197,28 @@ header {
     align-items: center;
   }
 
+  header div nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+  }
 
-header div nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  font-size: 0.9rem;
+  .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  section {
+    padding: 25px 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
 }
-
-
-.hero h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-section {
-  padding: 25px 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  
-}
-
-
-}
-
-
 
 @media (max-width: 320px) {
   header .container {
@@ -235,13 +229,10 @@ section {
     font-size: 0.7rem;
   }
 
-header div nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  font-size: 0.8rem;
+  header div nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+  }
 }
-
-
-}
-
