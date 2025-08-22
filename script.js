@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       const targetSection = document.querySelector(targetId);
-      targetSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      if(targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     });
   });
 
@@ -18,10 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if(entry.isIntersecting) {
+        requestAnimationFrame(() => { // otimização
         entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target) // otimização
+        })
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.3 }); // otimização 
 
   cards.forEach(card => observer.observe(card));
 });
